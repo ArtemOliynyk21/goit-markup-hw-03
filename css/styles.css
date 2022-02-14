@@ -1,0 +1,180 @@
+:root {
+  /*Основные шрифты*/
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-txt: #2196f3;
+  /*Цвет текста светлая тема*/
+  --primary-txt--mode-light: #212121;
+  --secondary-txt--mode-light: #757575;
+  /*Цвет текста темная тема*/
+  --primary-txt--mode-black: #ffffff;
+  --secondary-txt--mode-black: rgba(255, 255, 255, 0.6);
+  /* Цвет фона */
+  --main-bg: #e5e5e5;
+  /* Светлая тема фона */
+  --light-bg: #f5f4fa;
+  /* Темная тема фона */
+  --dark-bg: #2f303a;
+}
+/* Страница Студия */
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-txt--mode-light);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* Студия и портфолио хедер */
+.header-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: black;
+}
+.logo {
+  color: var(--accent-txt);
+}
+.nav-list .link.current {
+  color: var(--accent-txt);
+}
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.nav-link {
+  color: #212121;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-txt);
+}
+.contact-link {
+  font-weight: 500;
+  color: var(--secondary-txt--mode-light);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-txt);
+}
+
+/* Студия меин */
+.hero {
+  background-color: var(--dark-bg);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-txt--mode-black);
+}
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--accent-txt);
+  color: var(--primary-txt--mode-black);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits-text {
+  color: var(--secondary-txt--mode-light);
+}
+.services-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team-skill {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt--mode-light);
+}
+
+/* Студия и портфолио футер */
+.footer {
+  background-color: var(--dark-bg);
+}
+.footer-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-txt--mode-black);
+}
+.address {
+  font-style: normal;
+}
+.address-link {
+  color: var(--primary-txt--mode-black);
+}
+.address-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Страница Портфолио */
+.examples-name-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background-color: var(--light-bg);
+}
+.examples-name-btn:hover,
+.examples-name-btn:focus {
+  background-color: #188ce8;
+  color: var(--primary-txt--mode-black);
+}
+.examples-subject {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-txt--mode-light);
+}
+.examples-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt--mode-light);
+}
