@@ -25,13 +25,34 @@ body {
   color: var(--primary-txt--mode-light);
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Студия и портфолио хедер */
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
 .header-link {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -73,6 +94,10 @@ body {
   background-color: var(--dark-bg);
 }
 .hero-title {
+  outline: 2px solid tomato;
+  margin: 0 auto;
+  text-align: center;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
