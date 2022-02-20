@@ -24,10 +24,15 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-txt--mode-light);
 }
-.list {
+ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .link {
   text-decoration: none;
@@ -44,6 +49,11 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+/* Прячем заголовки */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
 
 /* Студия и портфолио хедер */
 .container {
@@ -53,10 +63,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .container-header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .header-link {
   margin-right: 93px;
@@ -116,16 +128,16 @@ ul {
 
 /* Студия меин */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--dark-bg);
   text-align: center;
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
-  padding-top: 200px;
-  padding-left: 237px;
-  padding-right: 237px;
-  text-align: center;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -134,7 +146,6 @@ ul {
   color: var(--primary-txt--mode-black);
 }
 .hero-button {
-  margin-bottom: 200px;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -152,9 +163,11 @@ ul {
 .hero-button:focus {
   background-color: #188ce8;
 }
-.benefits {
+.section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .benefits-list {
   display: flex;
 }
@@ -173,8 +186,7 @@ ul {
   color: var(--secondary-txt--mode-light);
 }
 .services {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .services-title {
   text-align: center;
@@ -191,8 +203,6 @@ ul {
 }
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -273,8 +283,8 @@ ul {
   margin-right: 8px;
 }
 .examples-name-btn {
-  width: 128px;
-  height: 38px;
+  min-width: 73px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
   font-family: inherit;
@@ -310,10 +320,8 @@ ul {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-.examples-pic {
-  display: block;
-}
 .examples-subject {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
